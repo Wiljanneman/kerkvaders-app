@@ -1,20 +1,22 @@
-<div class="p-8 flex items-center justify-center">
+<div class="bg-beige">
 
-  <ngx-mat-timeline
-  [position]="'center'"
-  [orientation]="'vertical'"
-  [reverse]="false"
-  >
-  <ngx-mat-timeline-item
-    *ngFor="let item of items; let idx = index"
-    [icon]="item.icon"
-    [svgIcon]="item.svgIcon"
-    [iconUrl]="getImageUrl(item.iconUrl!)"
-    [label]="item.label"
-  >
-    <div>
-      {{ item.content }}
+</div>
+
+<div class="flex w-full  justify-center items-center bottom-2 absolute cursor-pointer">
+  <div *ngFor="let item of items" class="flex-1 group relative flex flex-col items-center cursor-pointer">
+    <!-- Avatar -->
+    <div class="w-16 h-16 rounded-full  transform transition-all duration-300 group-hover:-translate-y-3 z-10">
+      <img src="{{item.iconUrl}}" class="shadow-mdml-6 w-16 h-16 rounded-full">
     </div>
-  </ngx-mat-timeline-item>
-  </ngx-mat-timeline>
+
+    <!-- Lollipop Stick -->
+    <div class="h-0 w-1 bg-blue-500 transition-all duration-300 group-hover:h-6"></div>
+
+    <!-- Label -->
+    <div
+      class="mt-2 text-sm text-center text-gray-700 transition-opacity duration-300 group-hover:opacity-100 opacity-0">
+      {{ item.label }}
+    </div>
+  </div>
+
 </div>
