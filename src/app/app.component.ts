@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import maplibregl from 'maplibre-gl';
 import { NgxMatTimelineModule } from 'ngx-mat-timeline';
 import '@maplibre/maplibre-gl-leaflet';
-import {filterByDate, dateRangeFromISODate } from '@openhistoricalmap/maplibre-gl-dates';
+import { filterByDate, dateRangeFromISODate } from '@openhistoricalmap/maplibre-gl-dates';
 
 
 interface Record {
@@ -26,19 +26,38 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     // var map = (L as any).map("map").setView([38.912753, -77.032194], 15);
 
-    // const map = new maplibregl.Map({
-    //   container: 'map',
-    //   style: 'https://www.openhistoricalmap.org/map-styles/main/main.json',
-    //   attributionControl: {
-    //     customAttribution: '<a href="https://www.openhistoricalmap.org/">OpenHistoricalMap</a>',
-    //   },
-    // });
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: 'https://www.openhistoricalmap.org/map-styles/main/main.json',
+      attributionControl: {
+        customAttribution: '<a href="https://www.openhistoricalmap.org/">OpenHistoricalMap</a>',
+      },
+      center: [10, 50], // Longitude, Latitude (Europe center-ish)
+      zoom: 4 // Good continent-level zoom
+    });
 
-    // // const maplibreMap = map.getMaplibreMap();
-    // // const maplibreMap = (map as any).getMaplibreMap();
-    // map.once('styledata', function (e: any) {
-    //    filterByDate(map, '1890-04-14');
-    // });
+    // const maplibreMap = map.getMaplibreMap();
+    // const maplibreMap = (map as any).getMaplibreMap();
+    map.once('styledata', function (e: any) {
+      filterByDate(map, '0099-04-14');
+    });
+
+    const markerHtml = document.createElement('div');
+    markerHtml.className = 'w-64 rounded-md border border-stone-700 shadow-lg bg-[url("/path/to/parchment.jpg")] bg-cover text-white font-serif overflow-hidden';
+
+    markerHtml.innerHTML = `
+  <div class="bg-black/60 p-2 flex gap-4">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Clemens_Romanus.jpg" alt="Portrait" class="rounded-full w-16 mb-2">
+    <div class="flex flex-col items-start justify-start">
+        <div class="font-bold text-sm">Clement</div>
+        <div class="text-xs">Bishop of Rome</div>
+    </div>
+  </div>
+`;
+
+    new maplibregl.Marker({ element: markerHtml })
+      .setLngLat([	12.496366,41.902782 ]) // Replace with your desired coords
+      .addTo(map);
 
 
   }
