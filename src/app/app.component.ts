@@ -32,14 +32,14 @@ export class AppComponent implements OnInit {
       attributionControl: {
         customAttribution: '<a href="https://www.openhistoricalmap.org/">OpenHistoricalMap</a>',
       },
-      center: [10, 50], // Longitude, Latitude (Europe center-ish)
+      center: [10, 45], // Longitude, Latitude (Europe center-ish)
       zoom: 4 // Good continent-level zoom
     });
 
     // const maplibreMap = map.getMaplibreMap();
     // const maplibreMap = (map as any).getMaplibreMap();
     map.once('styledata', function (e: any) {
-      filterByDate(map, '0099-04-14');
+      filterByDate(map, '099-01-01');
     });
 
     const markerHtml = document.createElement('div');
