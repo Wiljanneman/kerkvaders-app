@@ -1,0 +1,83 @@
+[
+    {
+      "label": "Clement of Rome",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Clemens_Romanus.jpg",
+      "lifespan": "d. ~99 AD",
+      "location": {
+        "name": "Rome",
+        "coordinates": [12.4964, 41.9028]
+      },
+      "writings": ["1 Clement"],
+      "quote": "Let us fix our thoughts on the blood of Christ, and reflect how precious that blood is to God.",
+      "content": "Clement was Bishop of Rome and one of the first Apostolic Fathers. His letter to the Corinthians addresses disputes in the church and emphasizes humility and unity."
+    },
+    {
+      "label": "Ignatius of Antioch",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Saint_Ignatius_of_Antioch.jpg",
+      "lifespan": "d. ~108 AD",
+      "location": {
+        "name": "Antioch",
+        "coordinates": [36.2021, 36.1606]
+      },
+      "writings": [
+        "Letter to the Ephesians",
+        "Letter to the Magnesians",
+        "Letter to the Trallians",
+        "Letter to the Romans",
+        "Letter to the Philadelphians",
+        "Letter to the Smyrnaeans",
+        "Letter to Polycarp"
+      ],
+      "quote": "Wherever the bishop appears, there let the people be; just as wherever Jesus Christ is, there is the Catholic Church.",
+      "content": "Ignatius was Bishop of Antioch and wrote a series of letters en route to his martyrdom. His writings emphasize church hierarchy, loyalty to bishops, and readiness for martyrdom."
+    },
+    {
+      "label": "Polycarp of Smyrna",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Polycarp.jpg/220px-Polycarp.jpg",
+      "lifespan": "69–155 AD",
+      "location": {
+        "name": "Smyrna (İzmir, Turkey)",
+        "coordinates": [27.1428, 38.4192]
+      },
+      "writings": ["Letter to the Philippians"],
+      "quote": "Eighty and six years I have served Him, and He has done me no wrong. How can I blaspheme my King and Savior?",
+      "content": "Polycarp, a disciple of John the Apostle, served as Bishop of Smyrna and was martyred by burning. He is revered for his unwavering faith and leadership."
+    },
+    {
+      "label": "The Didache",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Didache.jpg/220px-Didache.jpg",
+      "lifespan": "c. 50–120 AD",
+      "location": {
+        "name": "Possibly Syria or Palestine",
+        "coordinates": [35.2332, 31.7767]
+      },
+      "writings": ["The Teaching of the Twelve Apostles (Didache)"],
+      "quote": "There are two ways, one of life and one of death, but a great difference between the two ways.",
+      "content": "The Didache is an early Christian manual for ethics, rituals (baptism, Eucharist), and church practices. It bridges Jewish tradition and Christian instruction."
+    },
+    {
+      "label": "Hermas",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/ShepherdHermas.jpg/220px-ShepherdHermas.jpg",
+      "lifespan": "c. 90–140 AD",
+      "location": {
+        "name": "Rome",
+        "coordinates": [12.4964, 41.9028]
+      },
+      "writings": ["The Shepherd of Hermas"],
+      "quote": "Put away from you double-mindedness, and be not doubtful of the supplication when you ask of the Lord.",
+      "content": "Hermas was a Christian slave-turned-author in Rome. His visionary work, *The Shepherd*, was highly influential, urging repentance and righteousness."
+    },
+    {
+      "label": "Papias of Hierapolis",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Papias.jpg/220px-Papias.jpg",
+      "lifespan": "c. 60–130 AD",
+      "location": {
+        "name": "Hierapolis (modern-day Turkey)",
+        "coordinates": [29.1242, 37.9245]
+      },
+      "writings": ["Expositions of the Sayings of the Lord (fragments)"],
+      "quote": "I did not think that information from books would help me as much as the word of a living and surviving voice.",
+      "content": "Papias, bishop of Hierapolis, preserved oral traditions about Jesus and the apostles. Though most of his work is lost, fragments offer insight into early Gospel transmission."
+    }
+  ]
+  
