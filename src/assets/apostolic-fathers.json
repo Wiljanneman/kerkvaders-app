@@ -13,7 +13,7 @@
     },
     {
       "label": "Ignatius of Antioch",
-      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Saint_Ignatius_of_Antioch.jpg",
+      "iconUrl": "https://i.ytimg.com/vi/Fpls9clGz-A/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGHIgXCgjMA8=&rs=AOn4CLDH2RXfcuGDIy_8ANcboNIg2BTZ2Q",
       "lifespan": "d. ~108 AD",
       "location": {
         "name": "Antioch",
@@ -33,7 +33,7 @@
     },
     {
       "label": "Polycarp of Smyrna",
-      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Polycarp.jpg/220px-Polycarp.jpg",
+      "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAHDaTgQOifIRbGKRPICjIwLCOPfGws3O59A&s",
       "lifespan": "69–155 AD",
       "location": {
         "name": "Smyrna (İzmir, Turkey)",
@@ -45,7 +45,7 @@
     },
     {
       "label": "The Didache",
-      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Didache.jpg/220px-Didache.jpg",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Didache.png",
       "lifespan": "c. 50–120 AD",
       "location": {
         "name": "Possibly Syria or Palestine",
@@ -56,20 +56,8 @@
       "content": "The Didache is an early Christian manual for ethics, rituals (baptism, Eucharist), and church practices. It bridges Jewish tradition and Christian instruction."
     },
     {
-      "label": "Hermas",
-      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/ShepherdHermas.jpg/220px-ShepherdHermas.jpg",
-      "lifespan": "c. 90–140 AD",
-      "location": {
-        "name": "Rome",
-        "coordinates": [12.4964, 41.9028]
-      },
-      "writings": ["The Shepherd of Hermas"],
-      "quote": "Put away from you double-mindedness, and be not doubtful of the supplication when you ask of the Lord.",
-      "content": "Hermas was a Christian slave-turned-author in Rome. His visionary work, *The Shepherd*, was highly influential, urging repentance and righteousness."
-    },
-    {
       "label": "Papias of Hierapolis",
-      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Papias.jpg/220px-Papias.jpg",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Papias.png",
       "lifespan": "c. 60–130 AD",
       "location": {
         "name": "Hierapolis (modern-day Turkey)",

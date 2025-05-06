@@ -24,11 +24,11 @@ interface Record {
   providers: [FathersService]
 })
 export class AppComponent implements OnInit {
-
   title = 'kerkvaders-app';
   items: Record[] = [];
   map?: maplibregl.Map;
-  
+  selectedPeriod = 'Apostolic Fathers'; // or default to one you want
+
   constructor(private _fatherService: FathersService) {
 
   }
@@ -86,6 +86,10 @@ export class AppComponent implements OnInit {
       );
     }
     return null!;
+  }
+
+  setSelectedPeriod(period: string) {
+    this.selectedPeriod = period;
   }
 
 }

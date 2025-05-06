@@ -2,28 +2,25 @@
   <div class="bg-beige h-full">
     <div class="h-full" id="map">
       <div style="z-index: 99999;" class="w-full justify-center absolute bottom-0 ml-auto mr-auto flex gap-0">
-        <div class="bg-black/60 p-2 flex gap-4 rounded-l-sm rounded-r-sm p-4 text-white">
-          <button>
+        <div class="bg-black/60 p-2 flex gap-4 rounded-sm text-white">
+          <button class="cursor-pointer"
+            *ngFor="let period of [
+              { name: 'Apostolic Fathers', range: '70–150 AD' },
+              { name: 'Greek & Latin Apologists', range: '130–200 AD' },
+              { name: 'Early Teachers', range: '150–300 AD' },
+              { name: 'Later Church Fathers', range: '300–600 AD' }
+            ]"
+            (click)="setSelectedPeriod(period.name)"
+            [ngClass]="{
+              'squiggle-underline': selectedPeriod === period.name
+            }"
+          >
             <span class="flex flex-col items-center justify-center">
-              <span class="text-base">Apostolic Fathers</span>
-              <span class="text-xs">70–150 AD</span>
+              <span class="text-base">{{ period.name }}</span>
+              <span class="text-xs">{{ period.range }}</span>
             </span>
           </button>
-          <button class="border-r-white"> <span class="flex flex-col items-center justify-center">
-              <span class="text-base"> Greek & Latin Apologists</span>
-              <span class="text-xs">130–200 AD</span>
-            </span>
-          </button>
-          <button> <span class="flex flex-col items-center justify-center">
-              <span class="text-base">Early Teachers</span>
-              <span class="text-xs">150–300 AD</span>
-            </span></button>
-          <button> <span class="flex flex-col items-center justify-center">
-              <span class="text-base">Later Church Fathers</span>
-              <span class="text-xs">300–600 AD</span>
-            </span></button>
         </div>
-
       </div>
 
     </div>
