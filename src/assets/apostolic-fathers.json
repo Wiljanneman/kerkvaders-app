@@ -1,5 +1,6 @@
 [
     {
+      "periodId": 1,
       "label": "Clement of Rome",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Clemens_Romanus.jpg",
       "lifespan": "d. ~99 AD",
@@ -12,6 +13,7 @@
       "content": "Clement was Bishop of Rome and one of the first Apostolic Fathers. His letter to the Corinthians addresses disputes in the church and emphasizes humility and unity."
     },
     {
+      "periodId": 1,
       "label": "Ignatius of Antioch",
       "iconUrl": "https://i.ytimg.com/vi/Fpls9clGz-A/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGHIgXCgjMA8=&rs=AOn4CLDH2RXfcuGDIy_8ANcboNIg2BTZ2Q",
       "lifespan": "d. ~108 AD",
@@ -32,6 +34,7 @@
       "content": "Ignatius was Bishop of Antioch and wrote a series of letters en route to his martyrdom. His writings emphasize church hierarchy, loyalty to bishops, and readiness for martyrdom."
     },
     {
+      "periodId": 1,
       "label": "Polycarp of Smyrna",
       "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAHDaTgQOifIRbGKRPICjIwLCOPfGws3O59A&s",
       "lifespan": "69–155 AD",
@@ -44,6 +47,7 @@
       "content": "Polycarp, a disciple of John the Apostle, served as Bishop of Smyrna and was martyred by burning. He is revered for his unwavering faith and leadership."
     },
     {
+      "periodId": 1,
       "label": "The Didache",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Didache.png",
       "lifespan": "c. 50–120 AD",
@@ -56,6 +60,7 @@
       "content": "The Didache is an early Christian manual for ethics, rituals (baptism, Eucharist), and church practices. It bridges Jewish tradition and Christian instruction."
     },
     {
+      "periodId": 1,
       "label": "Papias of Hierapolis",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Papias.png",
       "lifespan": "c. 60–130 AD",
@@ -66,6 +71,150 @@
       "writings": ["Expositions of the Sayings of the Lord (fragments)"],
       "quote": "I did not think that information from books would help me as much as the word of a living and surviving voice.",
       "content": "Papias, bishop of Hierapolis, preserved oral traditions about Jesus and the apostles. Though most of his work is lost, fragments offer insight into early Gospel transmission."
+    },
+    {
+      "periodId": 2,
+      "label": "Justin Martyr",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/San_Giustino.jpg",
+      "lifespan": "c. 100–165 AD",
+      "location": {
+        "name": "Flavia Neapolis (modern Nablus, West Bank)",
+        "coordinates": [35.2765, 32.2211]
+      },
+      "writings": [
+        "First Apology",
+        "Second Apology",
+        "Dialogue with Trypho"
+      ],
+      "quote": "We have been taught that Christ is the first-born of God, and we have declared above that He is the Word of whom every race of men were partakers.",
+      "content": "Justin Martyr was a philosopher-turned-Christian who defended the faith using Greco-Roman philosophy. His apologies addressed Roman emperors, explaining Christian doctrine and practices, especially around worship and the Eucharist."
+    },
+    {
+      "periodId": 2,
+      "label": "Athenagoras of Athens",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Athenagoras_of_Athens.jpg",
+      "lifespan": "2nd century",
+      "location": {
+        "name": "Athens",
+        "coordinates": [23.7275, 37.9838]
+      },
+      "writings": [
+        "A Plea for the Christians",
+        "On the Resurrection of the Dead"
+      ],
+      "quote": "We are taught to love all, even our enemies.",
+      "content": "Athenagoras was a philosopher who converted to Christianity and addressed his writings to Roman emperors. He presented logical defenses of Christian monotheism, morality, and resurrection."
+    },
+    {
+      "periodId": 2,
+      "label": "Theophilus of Antioch",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Theophilus_of_Antioch.jpeg",
+      "lifespan": "d. ~183 AD",
+      "location": {
+        "name": "Antioch",
+        "coordinates": [36.2021, 36.1606]
+      },
+      "writings": ["To Autolycus"],
+      "quote": "Give me a man who loves and understands, who is wise and prudent, and I will show you God.",
+      "content": "Theophilus, bishop of Antioch, was one of the first to use the term 'Trinity.' His apologetic writings connect Greek philosophy and biblical revelation to defend Christianity."
+    },
+    {
+      "periodId": 3,
+      "label": "Irenaeus of Lyons",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Irenaeus_lyons.jpg",
+      "lifespan": "c. 130–202 AD",
+      "location": {
+        "name": "Lyon, France",
+        "coordinates": [4.8357, 45.7640]
+      },
+      "writings": ["Against Heresies"],
+      "quote": "The glory of God is man fully alive.",
+      "content": "Irenaeus was Bishop of Lyons and a key opponent of Gnosticism. His work emphasized the authority of Scripture and apostolic tradition in maintaining orthodox faith."
+    },
+    {
+      "periodId": 3,
+      "label": "Origen of Alexandria",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Origen.jpg",
+      "lifespan": "c. 184–253 AD",
+      "location": {
+        "name": "Alexandria, Egypt",
+        "coordinates": [29.9187, 31.2001]
+      },
+      "writings": [
+        "On First Principles",
+        "Contra Celsum",
+        "Commentaries on Scripture"
+      ],
+      "quote": "The power of choosing between good and evil is within the reach of all.",
+      "content": "Origen was a prolific theologian and biblical scholar from Alexandria. He developed early Christian hermeneutics, emphasizing allegorical interpretation and laying foundations for later theological debates."
+    },
+    {
+      "periodId": 3,
+      "label": "Tertullian",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tertullian_1.jpg",
+      "lifespan": "c. 155–220 AD",
+      "location": {
+        "name": "Carthage (modern Tunisia)",
+        "coordinates": [10.3308, 36.8580]
+      },
+      "writings": [
+        "Apology",
+        "Against Praxeas",
+        "On the Soul"
+      ],
+      "quote": "The blood of the martyrs is the seed of the Church.",
+      "content": "Tertullian was a skilled rhetorician and one of the earliest Latin theologians. He coined theological terms like 'Trinity' and was influential in shaping Western Christian thought."
+    },
+    {
+      "periodId": 4,
+      "label": "Athanasius of Alexandria",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Athanasius.jpg",
+      "lifespan": "c. 296–373 AD",
+      "location": {
+        "name": "Alexandria, Egypt",
+        "coordinates": [29.9187, 31.2001]
+      },
+      "writings": [
+        "On the Incarnation",
+        "Against the Arians",
+        "Festal Letters"
+      ],
+      "quote": "God became man so that man might become god.",
+      "content": "Athanasius was a fierce defender of Nicene orthodoxy against Arianism. He was exiled multiple times for his defense of the full divinity of Christ and is honored as a Doctor of the Church."
+    },
+    {
+      "periodId": 4,
+      "label": "Augustine of Hippo",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Saint_Augustine_-_Carlo_Crivelli.jpg",
+      "lifespan": "354–430 AD",
+      "location": {
+        "name": "Hippo Regius (modern Annaba, Algeria)",
+        "coordinates": [7.7667, 36.9000]
+      },
+      "writings": [
+        "Confessions",
+        "The City of God",
+        "On Christian Doctrine"
+      ],
+      "quote": "You have made us for yourself, O Lord, and our hearts are restless until they rest in you.",
+      "content": "Augustine was Bishop of Hippo and one of the most influential Christian thinkers in the West. His works shaped theology, especially on sin, grace, and the nature of the Church."
+    },
+    {
+      "periodId": 4,
+      "label": "Gregory the Great",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Pope_Gregory_I_-_Antoniazzo_Romano.jpg",
+      "lifespan": "c. 540–604 AD",
+      "location": {
+        "name": "Rome",
+        "coordinates": [12.4964, 41.9028]
+      },
+      "writings": [
+        "Pastoral Rule",
+        "Dialogues",
+        "Homilies on the Gospels"
+      ],
+      "quote": "The worth of a soul cannot be estimated except by the price paid for it.",
+      "content": "Gregory I, known as 'the Great,' was Pope and a reformer of church liturgy and mission. His pastoral and theological works deeply influenced medieval Christianity and the papacy."
     }
   ]
   

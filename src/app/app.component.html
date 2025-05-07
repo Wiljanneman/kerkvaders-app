@@ -5,14 +5,14 @@
         <div class="bg-black/60 p-2 flex gap-4 rounded-sm text-white">
           <button class="cursor-pointer"
             *ngFor="let period of [
-              { name: 'Apostolic Fathers', range: '70–150 AD' },
-              { name: 'Greek & Latin Apologists', range: '130–200 AD' },
-              { name: 'Early Teachers', range: '150–300 AD' },
-              { name: 'Later Church Fathers', range: '300–600 AD' }
+              { name: 'Apostolic Fathers', range: '70–150 AD', periodId: 1 },
+              { name: 'Greek & Latin Apologists', range: '130–200 AD', periodId: 2 },
+              { name: 'Early Teachers', range: '150–300 AD', periodId: 3 },
+              { name: 'Later Church Fathers', range: '300–600 AD', periodId: 4 }
             ]"
-            (click)="setSelectedPeriod(period.name)"
+            (click)="setSelectedPeriod(period.periodId)"
             [ngClass]="{
-              'squiggle-underline': selectedPeriod === period.name
+              'squiggle-underline': selectedPeriod === period.periodId
             }"
           >
             <span class="flex flex-col items-center justify-center">

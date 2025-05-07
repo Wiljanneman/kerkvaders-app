@@ -27,10 +27,15 @@ export class AppComponent implements OnInit {
   title = 'kerkvaders-app';
   items: Record[] = [];
   map?: maplibregl.Map;
-  selectedPeriod = 'Apostolic Fathers'; // or default to one you want
+  markers?: maplibregl.Marker[] = [];
+  selectedPeriod = 0; // default
 
   constructor(private _fatherService: FathersService) {
 
+  }
+
+  get currentMap(): maplibregl.Map {
+    return (this.map! as maplibregl.Map);
   }
 
   ngOnInit(): void {
@@ -50,8 +55,18 @@ export class AppComponent implements OnInit {
       filterByDate(this.map, '099-01-01');
     });
 
+    this.setupMarkers();
+  }
+
+  setupMarkers(): void {
+    // clear previous markers
+
+    this.markers?.forEach(e => {
+      e.remove();
+    })
+
     let apostolic = this._fatherService.getFathersData();
-    apostolic.forEach(e => {
+    apostolic.filter(x => this.selectedPeriod === x.periodId || this.selectedPeriod === 0).forEach(e => {
       this.addMarker(e);
     })
   }
@@ -72,9 +87,9 @@ export class AppComponent implements OnInit {
       <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-stone-700 rotate-45 mt-1 shadow-md"></div>
     `;
 
-    new maplibregl.Marker({ element: markerHtml, anchor: 'bottom' })
+    this.markers?.push(new maplibregl.Marker({ element: markerHtml, anchor: 'bottom' })
       .setLngLat(itemData.location.coordinates)
-      .addTo(this.map!);
+      .addTo(this.map!));
   }
 
 
@@ -88,8 +103,9 @@ export class AppComponent implements OnInit {
     return null!;
   }
 
-  setSelectedPeriod(period: string) {
+  setSelectedPeriod(period: number) {
     this.selectedPeriod = period;
+    this.setupMarkers();
   }
 
 }
