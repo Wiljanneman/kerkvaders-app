@@ -1,20 +1,39 @@
 <div class="h-screen">
   <div class="bg-beige h-full">
     <div class="h-full" id="map">
+      <div class="absolute top-2 right-0 flex z-9999 h-[70vh] w-[20vw]">
+        <div class="bg-black/60 flex gap-4 rounded-sm text-white w-full">
+          <div class="flex flex-col w-full">
+            <div class="p-2">
+              <div class="text-xl font-bold">Clement of Rome</div>
+              <div class="text-sm text-gray-300">d. ~99 AD - Rome</div>
+              <div class="italic text-sm py-4 p-2 bl-">"Let us fix our thoughts on the blood of Christ; and reflect how precious that blood is in God's eyes."</div>
+
+              <div class="text-sm">Writings: <span class="font-medium">1 Clement</span></div>
+              <div class="max-w-md text-sm text-gray-200 pt-2">
+                Clement was Bishop of Rome and one of the first Apostolic Fathers. His letter to the Corinthians
+                addresses disputes in the church and emphasizes humility and unity.
+              </div>
+
+            </div>
+
+            <!-- Row 3: Fills remaining height, content aligns to bottom -->
+            <div class="flex-1 flex flex-col justify-end items-center p-0 overflow-y-auto">
+              <img class="h-full" src="/assets/clementofrome.png" alt="Christianity Symbol">
+            </div>
+          </div>
+        </div>
+      </div>
       <div style="z-index: 99999;" class="w-full justify-center absolute bottom-0 ml-auto mr-auto flex gap-0">
         <div class="bg-black/60 p-2 flex gap-4 rounded-sm text-white">
-          <button class="cursor-pointer"
-            *ngFor="let period of [
+          <button class="cursor-pointer" *ngFor="let period of [
               { name: 'Apostolic Fathers', range: '70–150 AD', periodId: 1 },
               { name: 'Greek & Latin Apologists', range: '130–200 AD', periodId: 2 },
               { name: 'Early Teachers', range: '150–300 AD', periodId: 3 },
               { name: 'Later Church Fathers', range: '300–600 AD', periodId: 4 }
-            ]"
-            (click)="setSelectedPeriod(period.periodId)"
-            [ngClass]="{
+            ]" (click)="setSelectedPeriod(period.periodId)" [ngClass]="{
               'squiggle-underline': selectedPeriod === period.periodId
-            }"
-          >
+            }">
             <span class="flex flex-col items-center justify-center">
               <span class="text-base">{{ period.name }}</span>
               <span class="text-xs">{{ period.range }}</span>
@@ -22,7 +41,6 @@
           </button>
         </div>
       </div>
-
     </div>
   </div>
 
