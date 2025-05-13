@@ -29,7 +29,8 @@ export class AppComponent implements OnInit {
   map?: maplibregl.Map;
   markers?: maplibregl.Marker[] = [];
   selectedPeriod = 0; // default
-
+  currentFather;
+  apostolic;
   constructor(private _fatherService: FathersService) {
 
   }
@@ -55,6 +56,7 @@ export class AppComponent implements OnInit {
       filterByDate(this.map, '099-01-01');
     });
 
+    this.selectedPeriod = 1;
     this.setupMarkers();
   }
 
@@ -65,8 +67,9 @@ export class AppComponent implements OnInit {
       e.remove();
     })
 
-    let apostolic = this._fatherService.getFathersData();
-    apostolic.filter(x => this.selectedPeriod === x.periodId || this.selectedPeriod === 0).forEach(e => {
+    this.apostolic = this._fatherService.getFathersData();
+
+    this.apostolic.filter(x => this.selectedPeriod === x.periodId || this.selectedPeriod === 0).forEach(e => {
       this.addMarker(e);
     })
   }
@@ -74,8 +77,8 @@ export class AppComponent implements OnInit {
   addMarker(itemData) {
     
     const markerHtml = document.createElement('div');
-    markerHtml.className = 'relative cursor-pointer group w-20 h-20';
-    
+    markerHtml.className = `relative cursor-pointer group w-20 h-20`;
+    markerHtml.setAttribute('data-item', itemData.id);
     markerHtml.innerHTML = `
       <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-stone-700 shadow-md">
         <img 
@@ -87,9 +90,18 @@ export class AppComponent implements OnInit {
       <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-stone-700 rotate-45 mt-1 shadow-md"></div>
     `;
 
-    this.markers?.push(new maplibregl.Marker({ element: markerHtml, anchor: 'bottom' })
+    let markerContent = new maplibregl.Marker({ element: markerHtml, anchor: 'bottom' })
       .setLngLat(itemData.location.coordinates)
-      .addTo(this.map!));
+      .addTo(this.map!);
+
+      markerContent.getElement().addEventListener('click', (ev) => {
+        const id = (ev.currentTarget as HTMLElement)!.getAttribute('data-item');
+
+        this.currentFather = this.apostolic.find(x => x.id === +id!);
+
+      })
+
+    this.markers?.push(markerContent);
   }
 
 
