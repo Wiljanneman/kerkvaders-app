@@ -7,6 +7,7 @@ import '@maplibre/maplibre-gl-leaflet';
 import { filterByDate, dateRangeFromISODate } from '@openhistoricalmap/maplibre-gl-dates';
 import { FathersService } from './services/fathers.service';
 import { HttpClientModule } from '@angular/common/http';
+import { PeriodService } from './services/period.service';
 
 interface Record {
   icon?: string | null;
@@ -21,7 +22,7 @@ interface Record {
   imports: [RouterOutlet, CommonModule, NgxMatTimelineModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  providers: [FathersService]
+  providers: [FathersService, PeriodService]
 })
 export class AppComponent implements OnInit {
   title = 'kerkvaders-app';
@@ -31,7 +32,12 @@ export class AppComponent implements OnInit {
   selectedPeriod = 0; // default
   currentFather;
   apostolic;
-  constructor(private _fatherService: FathersService) {
+  periods!: any[];
+  currentPeriod: any;
+
+  constructor(
+    private _fatherService: FathersService,
+    private _periodsService: PeriodService) {
 
   }
 
@@ -68,6 +74,7 @@ export class AppComponent implements OnInit {
     })
 
     this.apostolic = this._fatherService.getFathersData();
+    this.periods = this._periodsService.getPeriods();
 
     this.apostolic.filter(x => this.selectedPeriod === x.periodId || this.selectedPeriod === 0).forEach(e => {
       this.addMarker(e);
@@ -117,6 +124,7 @@ export class AppComponent implements OnInit {
 
   setSelectedPeriod(period: number) {
     this.selectedPeriod = period;
+    this.currentPeriod = this.periods.find(x => x.id == period);
     this.setupMarkers();
   }
 

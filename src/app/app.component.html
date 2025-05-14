@@ -1,7 +1,23 @@
 <div class="h-screen">
   <div class="bg-beige h-full">
     <div class="h-full" id="map">
-      <div class="absolute top-2 right-0 flex z-9999 h-[70vh] w-[20vw]">
+      <div *ngIf="currentPeriod" class="absolute top-2 left-0 flex z-9999 h-[70vh] w-[20vw]">
+        <div class="bg-black/60 flex gap-4 rounded-sm text-white w-full">
+          <div class="bg-opacity-30 text-white px-4 py-2 rounded backdrop-blur-sm">
+            <div class="flex flex-col w-full">
+              <div class="p-2">
+                <div class="text-xl font-bold">{{currentPeriod.name}}</div>
+                <div class="text-sm font-semibold">{{currentPeriod.title}}</div>
+                <div class="text-xs text-gray-300">{{currentPeriod.range}}</div>
+              </div>
+            </div>
+              <div class="max-w-md text-sm text-gray-200 pt-2">
+                {{currentPeriod?.overview}}
+              </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="currentFather; else selectionPrompt" class="absolute top-2 right-0 flex z-9999 h-[70vh] w-[20vw]">
         <div class="bg-black/60 flex gap-4 rounded-sm text-white w-full">
           <div class="flex flex-col w-full">
             <div class="p-2">
@@ -11,7 +27,7 @@
               </div>
 
               <div class="italic text-sm py-4 p-2 bl-">{{currentFather?.quote}}</div>
-<!-- 
+              <!-- 
               <div class="text-sm">Writings: <span class="font-medium">1 Clement</span></div> -->
               <div class="max-w-md text-sm text-gray-200 pt-2">
                 {{currentFather?.content}}
@@ -20,21 +36,27 @@
             </div>
 
             <!-- Row 3: Fills remaining height, content aligns to bottom -->
-            <div class="flex-1 flex flex-col justify-end items-center p-0 overflow-y-auto">
-              <img class="h-full" src=" {{currentFather?.imageUrl}}"  alt="Christianity Symbol">
+            <div [hidden]="!currentFather?.imageUrl"
+              class="flex-1 flex flex-col justify-end items-center p-0 overflow-y-auto">
+              <img class="h-full" src=" {{currentFather?.imageUrl}}" alt="Christianity Symbol">
             </div>
           </div>
         </div>
       </div>
+      <ng-template #selectionPrompt>
+        <div class="absolute top-2 right-0 flex z-9999 h-[5vh] w-[15vw]">
+          <div class="bg-black/60 flex gap-4 rounded-sm text-white w-full">
+            <span class="text-base flex items-center justify-center w-full">
+              Select a character to view details
+            </span>
+          </div>
+        </div>
+
+      </ng-template>
       <div style="z-index: 99999;" class="w-full justify-center absolute bottom-0 ml-auto mr-auto flex gap-0">
         <div class="bg-black/60 p-2 flex gap-4 rounded-sm text-white">
-          <button class="cursor-pointer" *ngFor="let period of [
-              { name: 'Apostolic Fathers', range: '70–150 AD', periodId: 1 },
-              { name: 'Greek & Latin Apologists', range: '130–200 AD', periodId: 2 },
-              { name: 'Early Teachers', range: '150–300 AD', periodId: 3 },
-              { name: 'Later Church Fathers', range: '300–600 AD', periodId: 4 }
-            ]" (click)="setSelectedPeriod(period.periodId)" [ngClass]="{
-              'squiggle-underline': selectedPeriod === period.periodId
+          <button class="cursor-pointer" *ngFor="let period of periods" (click)="setSelectedPeriod(period.id)" [ngClass]="{
+              'squiggle-underline': selectedPeriod === period.id
             }">
             <span class="flex flex-col items-center justify-center">
               <span class="text-base">{{ period.name }}</span>

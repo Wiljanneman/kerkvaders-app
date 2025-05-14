@@ -4,7 +4,7 @@
       "periodId": 1,
       "label": "Clement of Rome",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Clemens_Romanus.jpg",
-      "imageUrl": "/assets/clementofrome.png",
+      "imageUrl": "/assets/portraits/clementofrome.png",
       "lifespan": "d. ~99 AD",
       "location": {
         "name": "Rome",
@@ -18,6 +18,7 @@
       "id": 2,
       "periodId": 1,
       "label": "Ignatius of Antioch",
+      "imageUrl": "/assets/portraits/ignatius.png",
       "iconUrl": "https://i.ytimg.com/vi/Fpls9clGz-A/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGHIgXCgjMA8=&rs=AOn4CLDH2RXfcuGDIy_8ANcboNIg2BTZ2Q",
       "lifespan": "d. ~108 AD",
       "location": {
@@ -40,6 +41,7 @@
       "id": 3,
       "periodId": 1,
       "label": "Polycarp of Smyrna",
+      "imageUrl": "/assets/portraits/polycarp.png",
       "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAHDaTgQOifIRbGKRPICjIwLCOPfGws3O59A&s",
       "lifespan": "69–155 AD",
       "location": {
