@@ -56,6 +56,7 @@
       "id": 4,
       "periodId": 1,
       "label": "The Didache",
+      "imageUrl": "/assets/portraits/didache.png",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Didache.png",
       "lifespan": "c. 50–120 AD",
       "location": {
