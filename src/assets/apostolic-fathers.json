@@ -85,7 +85,7 @@
       "id": 6,
       "periodId": 2,
       "label": "Justin Martyr",
-      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/San_Giustino.jpg",
+      "iconUrl": "https://cdn.catholic.com/wp-content/uploads/Untitled-1-900x900.jpg",
       "lifespan": "c. 100–165 AD",
       "location": {
         "name": "Flavia Neapolis (modern Nablus, West Bank)",
@@ -103,7 +103,8 @@
       "id": 7,
       "periodId": 2,
       "label": "Athenagoras of Athens",
-      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Athenagoras_of_Athens.jpg",
+      "imageUrl": "/assets/portraits/athenagoras.png",
+      "iconUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDg8HCVrWvkrKJnpxOPw-gVqW8WWw-WylhdI9moh382-AV8B676tmFB2WG9af441kYy94cDip4Pl9Pmu7WymPPP_4aklHzTtRVMN3XZBRddyTi0Lt3pHaHEHrDmugfNrSLfXfzBfyh-sIO/s1600/Athinagoras01.jpg",
       "lifespan": "2nd century",
       "location": {
         "name": "Athens",
@@ -117,10 +118,10 @@
       "content": "Athenagoras was a philosopher who converted to Christianity and addressed his writings to Roman emperors. He presented logical defenses of Christian monotheism, morality, and resurrection."
     },
     {
-      "id": 7,
+      "id": 8,
       "periodId": 2,
       "label": "Theophilus of Antioch",
-      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Theophilus_of_Antioch.jpeg",
+      "iconUrl": "https://newdailycompass.com/storage/imgs/san-teofilo-di-antiochia-large.jpg",
       "lifespan": "d. ~183 AD",
       "location": {
         "name": "Antioch",
@@ -131,7 +132,7 @@
       "content": "Theophilus, bishop of Antioch, was one of the first to use the term 'Trinity.' His apologetic writings connect Greek philosophy and biblical revelation to defend Christianity."
     },
     {
-      "id": 8,      
+      "id": 9,      
       "periodId": 3,
       "label": "Irenaeus of Lyons",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Irenaeus_lyons.jpg",
@@ -145,7 +146,7 @@
       "content": "Irenaeus was Bishop of Lyons and a key opponent of Gnosticism. His work emphasized the authority of Scripture and apostolic tradition in maintaining orthodox faith."
     },
     {
-      "id": 9,       
+      "id": 10,       
       "periodId": 3,
       "label": "Origen of Alexandria",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Origen.jpg",
@@ -163,7 +164,7 @@
       "content": "Origen was a prolific theologian and biblical scholar from Alexandria. He developed early Christian hermeneutics, emphasizing allegorical interpretation and laying foundations for later theological debates."
     },
     {
-      "id": 10,       
+      "id": 11,       
       "periodId": 3,
       "label": "Tertullian",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tertullian_1.jpg",
@@ -181,7 +182,7 @@
       "content": "Tertullian was a skilled rhetorician and one of the earliest Latin theologians. He coined theological terms like 'Trinity' and was influential in shaping Western Christian thought."
     },
     {
-      "id": 11,       
+      "id": 12,       
       "periodId": 4,
       "label": "Athanasius of Alexandria",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Athanasius.jpg",
@@ -199,7 +200,7 @@
       "content": "Athanasius was a fierce defender of Nicene orthodoxy against Arianism. He was exiled multiple times for his defense of the full divinity of Christ and is honored as a Doctor of the Church."
     },
     {
-      "id": 12,       
+      "id": 13,       
       "periodId": 4,
       "label": "Augustine of Hippo",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Saint_Augustine_-_Carlo_Crivelli.jpg",
@@ -217,7 +218,7 @@
       "content": "Augustine was Bishop of Hippo and one of the most influential Christian thinkers in the West. His works shaped theology, especially on sin, grace, and the nature of the Church."
     },
     {
-      "id": 13,       
+      "id": 14,       
       "periodId": 4,
       "label": "Gregory the Great",
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Pope_Gregory_I_-_Antoniazzo_Romano.jpg",
