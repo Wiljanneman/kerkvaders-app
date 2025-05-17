@@ -125,6 +125,9 @@ export class AppComponent implements OnInit {
   setSelectedPeriod(period: number) {
     this.selectedPeriod = period;
     this.currentPeriod = this.periods.find(x => x.id == period);
+
+
+    filterByDate(this.map, `${this.currentPeriod.mapYear}-01-01`);
     this.setupMarkers();
   }
 

@@ -18,10 +18,10 @@
         </div>
       </div>
       <div *ngIf="currentFather; else selectionPrompt" class="absolute top-2 right-0 flex z-9999 h-[70vh] w-[20vw]">
-        <div class="bg-black/60 flex gap-4 rounded-sm text-white w-full">
+        <div class="bg-black/60 flex gap-4 rounded-sm text-white w-full  bg-banner-pastel">
           <div class="flex flex-col w-full">
             <div class="p-2">
-              <div class="bg-opacity-30 text-white px-4 py-2 rounded backdrop-blur-sm">
+              <div class="text-white px-4 py-1 rounded-sm border border-gray-700 shadow-inner w-full">
                 <div class="text-xl font-bold">{{currentFather?.label}}</div>
                 <div class="text-sm text-gray-300">{{currentFather?.lifespan}} - {{currentFather?.location?.name}}</div>
               </div>
@@ -45,7 +45,7 @@
       <ng-template #selectionPrompt>
         <div class="absolute top-2 right-0 flex z-9999 h-[5vh] w-[15vw]">
           <div class="bg-black/60 flex gap-4 rounded-sm text-white w-full">
-            <span class="text-base flex items-center justify-center w-full">
+            <span class="flex items-center justify-center w-full">
               Select a character to view details
             </span>
           </div>

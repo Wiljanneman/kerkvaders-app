@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Apostolic Fathers",
     "range": "70–150 AD",
+    "mapYear": 100,
     "title": "Still echoing the voice of the Apostles.",
     "overview": "The Roman Empire rules supreme, and Christianity is still a fragile and persecuted minority. The Apostles are gone or dying out, and their immediate disciples—like Clement of Rome, Ignatius of Antioch, and Polycarp—fight to preserve the teachings they've received. Churches are house-based, fragmented, and often at odds over leadership, doctrine, and practice. There's no formal canon yet, and authority hinges on apostolic connection. Heresies like Docetism and early Gnosticism begin to emerge, and martyrdom is a real and present threat.",
     "themes": [
@@ -22,6 +23,7 @@
     "id": 2,
     "name": "Greek & Latin Apologists",
     "range": "130–200 AD",
+    "mapYear": 150,
     "title": "Defenders in the courts of emperors and philosophers.",
     "overview": "Christianity has spread to major cities and is seen with suspicion by both Roman authorities and philosophers. The Apologists step up—not bishops, but public intellectuals—writing to Roman emperors and Greco-Roman audiences. They defend Christian beliefs as reasonable and moral, trying to prove Christians are not threats to the Empire. Justin Martyr bridges Christian theology with Greek philosophy, while Tertullian sharpens the Latin defense with wit and passion. Persecutions are more organized, but so is the Church’s self-definition.",
     "themes": [
@@ -41,6 +43,7 @@
     "id": 3,
     "name": "Early Teachers",
     "range": "150–300 AD",
+    "mapYear": 250,
     "title": "Building the Church before Constantine.",
     "overview": "This is the time of theologians, bishops, and systematic thinkers. Schools like Alexandria and Antioch shape early theological traditions. Irenaeus of Lyons combats Gnosticism by grounding faith in Scripture and apostolic tradition. Origen pushes the boundaries of biblical interpretation and theological speculation. The Church is becoming more organized—bishops hold councils, liturgies are becoming formalized, and creeds begin to take shape. Yet persecution under emperors like Decius and Diocletian grows more intense.",
     "themes": [
@@ -60,6 +63,7 @@
     "id": 4,
     "name": "Later Church Fathers",
     "range": "300–600 AD",
+    "mapYear": 400,
     "title": "From persecuted minority to imperial religion.",
     "overview": "Constantine legalizes Christianity in 313 AD; Theodosius makes it the state religion by the end of the century. Now the challenge isn’t survival—it’s unity and orthodoxy. Massive theological debates erupt: Who is Christ? What is the Trinity? The great ecumenical councils (Nicaea, Constantinople, Chalcedon) define doctrine. Augustine's towering intellect defines Western Christianity, while the Cappadocians defend the divinity of the Holy Spirit in the East. Monasticism rises as a counter-cultural movement. The Roman Empire collapses in the West, but the Church remains—and even expands.",
     "themes": [
